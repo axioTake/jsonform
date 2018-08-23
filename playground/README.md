@@ -20,4 +20,13 @@ http-server
 Then open this in page in your favorite browser:
 [`http://localhost:8080/playground/`](http://localhost:8080/playground/)
 
+3. Using `php`s builtin server:
+```php
+php -S localhost:9100
+```
+Then open this in page in your favorite browser:
+[`http://localhost:9100/playground/`](http://localhost:9100/playground/)
+
+
 NB: The final `/` in the URL is needed.
+

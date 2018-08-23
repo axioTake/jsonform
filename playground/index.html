@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>JSON Form Playground</title>
     <style>
-      @import url("../deps/opt/bootstrap.css");
-      @import url("../deps/opt/bootstrap-wysihtml5.css");
+      @import url("../deps/opt/glyphicons.css");
+      @import url("../deps/opt/bootstrap.min.css");
       @import url("../deps/opt/spectrum.css");
 
       h2 { font-weight: 200; margin-top: 0;}
@@ -13,7 +14,7 @@
       .tagline {
         padding: 10px;
         font-weight: 200;
-        margin-top: -1em;
+        margin-top: +1em;
       }
 
       .footer {
@@ -50,21 +51,40 @@
         color: red;
         padding-top: 1em;
       }
+
+      .form-row > label {
+        margin-right: 1.5rem;
+      }
+
+      .form-check-input + .form-check-label {
+        margin-left: 1rem;
+      }
+
+      div.tabbable > ul > li > a {
+        cursor: pointer;
+      }
+
+      /* Hide HTML5 Up and Down arrows. */
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }      
     </style>
   </head>
   
   <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">JSON Form Playground</a>
-          <div>
-            <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="http://github.com/jsonform/jsonform/wiki">Documentation</a></li>
-              <li><a href="http://github.com/jsonform/jsonform">Project on github</a></li>
-            </ul>
-          </div>
-        </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">JSON Form Playground</a>
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://github.com/jsonform/jsonform/wiki">Documentation</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://github.com/axioTake/jsonform">Project on github</a></li>
+      </ul>
     </nav>
 
     <div class="container">
@@ -85,7 +105,7 @@
     </div>
     <footer class="footer">
       <div class="container">
-      <p>Originally created by <a href="http://joshfire.com">Joshfire</a>.</p>
+      <p>Originally created by <a href="http://joshfire.com">Joshfire</a>. Migratation to Bootstrap 4 by <a href="http://axioTake@github.com">axioTake</a>.</p>
       <p><a href="http://github.com/jsonform/jsonform" title="JSON Form library code">Code</a> available on github, licensed under the <a href="https://raw.github.com/jsonform/jsonform/master/LICENSE">MIT License</a> — See <a href="https://github.com/jsonform/jsonform/wiki#wiki-deps">dependencies</a> for the list of libraries and licenses used by JSON Form.</p>
       </div>
     </footer>
@@ -97,8 +117,7 @@
     <script src="../deps/opt/jquery.ui.widget.js"></script>
     <script src="../deps/opt/jquery.ui.mouse.js"></script>
     <script src="../deps/opt/jquery.ui.sortable.js"></script>
-    <script src="../deps/opt/bootstrap-dropdown.js"></script>
-    <script src="../deps/opt/bootstrap-wysihtml5.js"></script>
+    <script src="../deps/bootstrap.bundle.min.js"></script>
     <script src="../deps/opt/spectrum.js"></script>
     <script src="../deps/opt/ace/ace.js"></script>
     <script src="../deps/opt/ace/mode-json.js"></script>
@@ -109,7 +128,7 @@
     <script src="../deps/opt/ace/mode-markdown.js"></script>
     <script src="../deps/opt/jquery.transloadit2.js"></script>
 
-    <script src="../lib/jsonform.js"></script>
+    <script src="../lib/jsonform4.js"></script>
 
     <script src="playground.js"></script>
   </body>
