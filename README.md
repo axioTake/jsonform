@@ -38,7 +38,7 @@ The example below creates a form that asks for the user's name and age. The user
     <script type="text/javascript" src="deps/jquery.min.js"></script>
     <script type="text/javascript" src="deps/underscore.js"></script>
     <script type="text/javascript" src="deps/opt/jsv.js"></script>
-    <script type="text/javascript" src="lib/jsonform.js"></script>
+    <script type="text/javascript" src="lib/jsonform4.js"></script>
     <script type="text/javascript">
       $('form').jsonForm({
         schema: {
